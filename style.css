@@ -1,0 +1,156 @@
+/*.slideshow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 2s ease-in-out;
+  }
+  
+  .slideshow {
+    background-image: url("images/project1.jpg");
+    animation: slideshow 4s linear infinite;
+  }
+  
+  <div class="slideshow">
+    <img src="images/project1.jpg" alt="Image 1">
+    <img src="images/project2.jpg" alt="Image 2">
+    <img src="images/project3.jpg" alt="Image 3">
+</div>
+  
+  */
+  
+ 
+  
+body {
+ animation: slideshow 16s linear infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    max-height: 100%;
+    background-image: url("images/image1.JPG");
+    background-size: 100%;
+  }
+
+  25% {
+    background-image: url("images/image2.JPG");
+    background-size: 100%;
+
+  }
+
+  50% {
+    background-image: url("images/image3.JPG");
+    background-size: 100%;
+
+  }
+
+  75% {
+    background-image: url("images/image4.JPG");
+    background-size: 100%;
+
+  }
+
+  100% {
+    background-image: url("images/image1.JPG");
+    background-size: 100%;
+
+  }
+  from{
+    top:0%;
+  }
+  to{
+    bottom: 0%;
+  }
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+
+}
+
+#prev
+{
+  background-color: transparent;
+  background: none;  
+
+  border-style: solid;
+  border-color: aliceblue;
+
+  font-family: 'Harlow Solid Italic','Matura MT Script Capitals','Imprint MT Shadow',Cochin;
+  font-size: large;
+
+ 
+  color: #d400ff;
+  height: 10%;
+  width: 20%;
+}
+
+#prev:hover
+{
+  background-color: rgba(200, 209, 48, 0.4);
+  cursor:pointer;
+}
+/*
+.bridgeLink{
+  background: inherit;
+}
+*/
+footer
+{
+  text-align: center;
+  
+  border-top: solid 10px #EA3680;
+}
+footer > p {
+  margin: 2rem;
+}
+
+
+#foot
+{
+  color: #00FFFA;
+  font-weight: bold;
+  text-decoration:solid;
+  font-size: x-large;
+  font-family: 'French Script MT';
+  
+
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+
+ 
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 
+                 0 0 50px #1DEEFF, 0 0 60px #1DEEFF, 0 0 70px #1DEEFF;
+    animation: animate 1s infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  to {
+    text-shadow: 0 0 20px #eeeeee, 0 0 30px #FFF605, 0 0 40px #FFF605, 0 0 50px #FFF605,
+                 0 0 60px #FFF605, 0 0 70px #FFF605, 0 0 80px #FFF605;
+  }
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
