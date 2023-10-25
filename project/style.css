@@ -22,6 +22,7 @@
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
+    background: var(--main-gradient);
   }
   
   @media (max-width: 75em) {
