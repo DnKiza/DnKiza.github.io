@@ -1,7 +1,7 @@
 
   
 body {
- animation: slideshow 25s linear infinite;
+ animation: slideshow 40s linear infinite;
 }
 
 @keyframes slideshow {
