@@ -78,22 +78,6 @@ h1 {
 }
 
   </style>
-  <script>
-function validateForm() {
-
-var email = document.getElementById("email").value;
-var regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-if (!regex.test(email)) {
-  alert("Please enter a valid email address.");
-  return false;
-}
-
-return true;
-}
-
-document.getElementById("form").addEventListener("submit", validateForm);
-<script>
 </head>
 <body>
   <h1>Contact Don Kelly</h1>
